@@ -24,9 +24,11 @@ import { en } from './locales/en'
 import { ar } from './locales/ar'
 
 
-const i18n = createI18n({
+export const i18n = createI18n({
     legacy: false,
     locale: '',
+    fallbackLocale: 'en',
+
     messages: {
         en:en,
         ar:ar
@@ -57,4 +59,5 @@ app.directive('tooltip', Tooltip);
 app.use(ToastService);
 
 app.mount('#app')
+
 
