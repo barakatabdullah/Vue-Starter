@@ -1,6 +1,8 @@
 @layer tailwind-base, primevue;
 
-@import '@unocss/reset/tailwind.css'layer(tailwind-reset) ;
+@import '@unocss/reset/tailwind.css'layer(tailwind-reset);
+
+@import '../assets/main.css';
 
 
 *{
